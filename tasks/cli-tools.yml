@@ -3,20 +3,24 @@
   name: CLI tools
   tasks:
     - name: Install httpie
-      homebrew: 
+      homebrew:
         name: httpie
         state: present
 
     - name: Install jq
-      homebrew: 
+      homebrew:
         name: jq
         state: present
-
     - name: Tap a hashicorp
       community.general.homebrew_tap:
         name: hashicorp/tap
-        
+
     - name: Install terraform
-      homebrew: 
+      homebrew:
         name: jq
+        state: present
+
+    - name: Install kubectl
+      homebrew:
+        name: kubectl
         state: present
