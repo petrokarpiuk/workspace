@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  name: Code editors
+  tasks:
+    - name: Install neovim
+      homebrew: 
+        name: neovim
+        state: present

@@ -1,0 +1,22 @@
+---
+- hosts: localhost
+  name: CLI tools
+  tasks:
+    - name: Install httpie
+      homebrew: 
+        name: httpie
+        state: present
+
+    - name: Install jq
+      homebrew: 
+        name: jq
+        state: present
+
+    - name: Tap a hashicorp
+      community.general.homebrew_tap:
+        name: hashicorp/tap
+        
+    - name: Install terraform
+      homebrew: 
+        name: jq
+        state: present

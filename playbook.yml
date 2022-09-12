@@ -1,5 +1,0 @@
----
-- hosts: localhost
-  tasks:
-    - name: Install httpie
-      shell: brew install httpie
