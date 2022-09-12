@@ -12,3 +12,4 @@ ansible-playbook -c local editors.yml
 - node, npm, n
 - kubens, kubecx
 - kustomize
+- docker
