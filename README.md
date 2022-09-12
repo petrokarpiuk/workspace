@@ -3,9 +3,12 @@
 ansible-playbook -c local editors.yml
 ```
 
-# To automate
+# To Do
 - golang
-- gcloud cli
+- gcloud
 - sublime
 - vscode
-- 
+- aliases
+- node, npm, n
+- kubens, kubecx
+- kustomize
