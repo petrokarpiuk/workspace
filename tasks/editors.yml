@@ -6,3 +6,7 @@
       homebrew: 
         name: neovim
         state: present
+    - name: Add Sublime to path
+      ansible.builtin.shell: "echo 'export PATH=\"/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH\"' >> ~/.zprofile"
+      changed_when: false
+      check_mode: false
